@@ -1,0 +1,13 @@
+# Build
+target
+
+# IntelliJ
+*.iml
+.idea
+
+# Misc
+.DS_Store
+.classpath
+.project
+.settings
+.vscode

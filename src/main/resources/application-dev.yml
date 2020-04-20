@@ -1,0 +1,25 @@
+spring:
+  profiles: dev
+
+email: sava.simic@gmail.com
+template: "Hello, %s! Contact us: %s!"
+defaultName: Stranger
+userTemplate: "Hello, %s! This is user page, your roles are: %s!"
+adminTemplate: "Hello, %s! This is admin page, your roles are: %s!"
+
+authentication:
+  users:
+    - username: user
+      password: user123!
+      roles: USER
+    - username: admin
+      password: admin123!
+      roles: USER,ADMIN
+
+server:
+  port: 5000
+
+logging:
+  level:
+    org.springframework: ERROR
+    xyz.infiniteloop: DEBUG

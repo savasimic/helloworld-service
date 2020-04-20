@@ -1,0 +1,23 @@
+spring:
+  profiles: prod
+
+email: sava.simic@gmail.com
+template: "Hello, %s! Contact us: %s!"
+defaultName: Stranger
+
+authentication:
+  users:
+    - username: user
+      password: user123!
+      roles: USER
+    - username: admin
+      password: admin123!
+      roles: USER,ADMIN
+
+server:
+  port: 5000
+
+logging:
+  level:
+    org.springframework: ERROR
+    xyz.infiniteloop: INFO
