@@ -15,7 +15,7 @@ import xyz.infiniteloop.model.Hello;
 /**
  * @author Sava Simic (sava.simic@gmail.com)
  */
-public class DefaultController {
+public sealed class DefaultController permits AdminController, HelloWorldController, UserController {
     protected static final Logger logger = LoggerFactory.getLogger(DefaultController.class);
 
     @Autowired

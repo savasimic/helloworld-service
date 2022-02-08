@@ -15,7 +15,7 @@ import xyz.infiniteloop.model.Hello;
  */
 @RestController
 @RequestMapping("user")
-public class UserController extends DefaultController {
+public final class UserController extends DefaultController {
 
     private final AtomicLong userCounter = new AtomicLong();
 

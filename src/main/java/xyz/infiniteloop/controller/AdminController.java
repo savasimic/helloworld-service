@@ -15,7 +15,7 @@ import xyz.infiniteloop.model.Hello;
  */
 @RestController
 @RequestMapping("admin")
-public class AdminController extends DefaultController {
+public final class AdminController extends DefaultController {
 
     private final AtomicLong adminCounter = new AtomicLong();
 

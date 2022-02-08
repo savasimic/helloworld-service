@@ -13,7 +13,7 @@ import xyz.infiniteloop.model.Hello;
  * @author Sava Simic (sava.simic@gmail.com)
  */
 @RestController
-public class HelloWorldController extends DefaultController {
+public final class HelloWorldController extends DefaultController {
 
     private final AtomicLong helloCounter = new AtomicLong();
 
