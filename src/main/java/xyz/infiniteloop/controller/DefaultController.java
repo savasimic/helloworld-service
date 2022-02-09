@@ -1,5 +1,7 @@
 package xyz.infiniteloop.controller;
 
+import io.micrometer.core.instrument.MeterRegistry;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +22,9 @@ public sealed class DefaultController permits AdminController, HelloWorldControl
 
     @Autowired
     protected HelloWorldServiceConfiguration configuration;
+
+    @Autowired
+    protected MeterRegistry meterRegistry;
 
     protected Hello createResponse(AtomicLong counter, String content) {
         return new Hello(counter.incrementAndGet(), content);

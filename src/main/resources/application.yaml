@@ -15,6 +15,12 @@ authentication:
       password: admin123!
       roles: USER,ADMIN
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "health,metric,prometheus"
+
 server:
   port: 5000
 
